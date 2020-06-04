@@ -8,13 +8,13 @@ using namespace std;
 // is M prime?
 bool isPrime(int m) {
 	bool prime = true;
-	int i = m/2; //int division
+	int i = 2; //int division
 
-	while (prime && (i>=2)) {
+	while (prime && (i<=m/2)) {
 		if (m%i == 0) {
 			prime = false;	
 		}
-	i--;
+	i++;
 	}
 
 	return prime;
